@@ -50,6 +50,8 @@
     z-index: 1;
     color: white;
     padding: 20px;
+    left: 0;
+    right: 0;
 }
 
 .LoginScreen__body > h1{
@@ -86,7 +88,7 @@
     font-size: 1rem;
     color: #fff;
     background-color: #e50914;
-    border: 600;
+    border: none;
     font-weight:600;
     cursor: pointer;
 }
