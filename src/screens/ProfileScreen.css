@@ -1,0 +1,103 @@
+.profileScreen{
+    height: 100vh;
+    color: white;
+}
+
+.profileScreen__body{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    max-width: 800px;
+}
+
+.profileScreen__info{
+    display: flex;
+
+}
+
+.profileScreen__details{
+    color: white;
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profileScreen__body > h1{
+    font-size: 60px;
+    font-weight: 400;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+.profileScreen__info > img {
+    height: 100px;
+}
+
+
+.profileScreen__details >h2{
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.profileScreen__signOut{
+    padding:10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    width: 100%;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.profileScreen__CurrentPlan{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-top:10px;
+    border-bottom: 0.7px solid #282c2d;
+}
+
+.profileScreen__RenewalDate{
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.profileScreen__Subscription{
+    display: flex;
+    justify-content: space-between;
+}
+.profileScreen__Subscription > h5{
+    padding:10px 20px;
+    font-weight: 500;
+    margin-top: 5%;
+}
+
+.profileScreen__subscribe{
+    padding:10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    background-color: #e50914;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profileScreen__CurrentPackage{
+    padding:10px 20px;
+    font-size: 1rem;
+    margin-top: 5%;
+    background-color: gray;
+    color: #282c2d;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -10,9 +10,10 @@ import LoginScreen from './screens/LoginScreen';
 import { auth } from './features/counter/firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/counter/counterSlice';
+import ProfileScreen from './screens/ProfileScreen';
 
 function App() {
-  const [user, setUser] = useState(null);
+  const user= useSelector(selectUser);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,16 +23,13 @@ function App() {
           uid: userAuth.uid,
           email: userAuth.email,
         }));
-        setUser({
-          email: userAuth.email,
-          uid: userAuth.uid
-        });
+        console.log("user ::"+user);
       }else{
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return  unsubscribe;
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
@@ -42,6 +40,9 @@ function App() {
         ):
          (
           <Switch>
+            <Route path="/profile">
+              <ProfileScreen/>
+            </Route>
             <Route path="/">
               <HomeScreen />
             </Route>
