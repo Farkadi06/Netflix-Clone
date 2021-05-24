@@ -21,6 +21,13 @@ function SignUpScreen() {
 
     const signIn = (e) => {
         e.preventDefault();
+
+        auth.signInWithEmailAndPassword(
+            EmailRef.current.value,
+            PasswordRef.current.value
+        ).then((authUser) => {
+            console.log(authUser);
+        }).catch(error => alert(error.message));
     }
 
     return (
