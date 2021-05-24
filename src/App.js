@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import HomeScreen from './screens/HomeScreen';
 import {
@@ -8,21 +8,31 @@ import {
 } from "react-router-dom";
 import LoginScreen from './screens/LoginScreen';
 import { auth } from './features/counter/firebase';
+import { useDispatch, useSelector } from 'react-redux';
+import { login, logout, selectUser } from './features/counter/counterSlice';
 
 function App() {
-  
+  const [user, setUser] = useState(null);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(userAuth => {
       if(userAuth){
-        console.log(userAuth)
+        dispatch(login({
+          uid: userAuth.uid,
+          email: userAuth.email,
+        }));
+        setUser({
+          email: userAuth.email,
+          uid: userAuth.uid
+        });
       }else{
-        //logged out
+        dispatch(logout);
       }
     });
     return  unsubscribe;
-  })
+  }, []);
 
-  const user = null;
   return (
     <div className="App">
       <Router>
