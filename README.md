@@ -1,8 +1,10 @@
-This project is a Netflix-clone using ReactJs + firebase + RestAPI (TMDB)
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+This project is a Netflix-clone using:
+   - ReactJs.
+   - Firebase (FireStore + Firbase EmailPassword Auth ).
+   - FRestAPI (TMDB).
 
 ## Available Scripts
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 In the project directory, you can run:
 
