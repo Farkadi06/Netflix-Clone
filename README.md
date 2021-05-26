@@ -1,5 +1,5 @@
 This project is a Netflix-clone using:
-   - ReactJs.
+   - ReactJs + Redux + React Routers.
    - Firebase (FireStore + Firbase EmailPassword Auth ).
    - FRestAPI (TMDB).
 
