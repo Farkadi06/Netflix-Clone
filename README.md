@@ -1,7 +1,11 @@
-This project is a Netflix-clone using:
+## This project is a Netflix-clone using:
    - ReactJs + Redux + React Routers.
    - Firebase (FireStore + Firbase EmailPassword Auth ).
    - RestAPI (TMDB).
+
+## Demo of the application : 
+<img src ="/HomePage.png">
+<img src ="/WatchScreen.png">
 
 ## Available Scripts
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
